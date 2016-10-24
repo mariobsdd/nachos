@@ -477,6 +477,7 @@ public static void selfTest() {
     tres.join();
     */
     /**/
+    /*
     //PRUEBA PARA LOS LISTENER Y SPEAKERS
     Communicator com = new Communicator();
     Lib.debug(dbgThread, "Enter KThread.selfTest"); 
@@ -491,7 +492,9 @@ public static void selfTest() {
     cero.join();
     uno.join();
     dos.join();
-    tres.join();    
+    tres.join();  */
+    Boat b = new Boat();
+    b.selfTest();
 }
 
     public static KThread tres = null;
