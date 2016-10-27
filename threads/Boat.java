@@ -18,69 +18,6 @@ public class Boat
 
 	//asientos disponibles en el bote. 2 ninos top, 1 adult top
 	public static int seatsAvailable = 2;
-
-
-    //CLASE ISLA
-    public static class Isla{
-    	
-    	public int child, adult;
-    	public Condition isla;
-    	//numero de personas en la otra isla
-    	public int people;
-
-    	public Isla(int child, int adult, Condition isla){
-    		this.child = child;
-    		this.adult = adult;
-    		this.isla = isla;
-    	}
-
-    	//sets y gets
-    	public int  getChild(){
-    		return child;
-    	}
-    	public int getAdult(){
-    		return adult;
-    	}
-    	public Condition getIsla(){
-    		return isla;
-    	}
-    	public int getPeople(){
-    		return people;
-    	}
-    	public void setChild(int child){
-    		this.child = child;
-    	}
-    	public void setAdult(int adult){
-    		this.adult = adult;
-    	}
-    	public void setIsla(Condition isla){
-    		this.isla = isla;
-    	}
-    	public void setPeople(int people){
-    		this.people = people;
-    	}
-
-
-    	//para poder incrementar y decrementar los ninos y adultos
-    	public void incrementChild(){
-    		child = child + 1;
-    	}
-    	public void decrementChild(){
-    		child = child - 1;
-    	}
-    	public void incrementAdult(){
-    		adult = adult + 1;
-    	}
-    	public void decrementAdult(){
-    		adult = adult - 1;
-    	}
-
-    	//devuelve la suma de ninos y adultos en una isla
-    	public int getPopulation(){
-    		return child + adult;
-    	}
-
-    }
     
     static BoatGrader bg;
     
@@ -277,6 +214,68 @@ public class Boat
 		bg.ChildRideToMolokai();
 		bg.AdultRideToMolokai();
 		bg.ChildRideToMolokai();
+    }
+
+        //CLASE ISLA
+    public static class Isla{
+    	
+    	public int child, adult;
+    	public Condition isla;
+    	//numero de personas en la otra isla
+    	public int people;
+
+    	public Isla(int child, int adult, Condition isla){
+    		this.child = child;
+    		this.adult = adult;
+    		this.isla = isla;
+    	}
+
+    	//sets y gets
+    	public int  getChild(){
+    		return child;
+    	}
+    	public int getAdult(){
+    		return adult;
+    	}
+    	public Condition getIsla(){
+    		return isla;
+    	}
+    	public int getPeople(){
+    		return people;
+    	}
+    	public void setChild(int child){
+    		this.child = child;
+    	}
+    	public void setAdult(int adult){
+    		this.adult = adult;
+    	}
+    	public void setIsla(Condition isla){
+    		this.isla = isla;
+    	}
+    	public void setPeople(int people){
+    		this.people = people;
+    	}
+
+
+    	//para poder incrementar y decrementar los ninos y adultos
+    	public void incrementChild(){
+    		child = child + 1;
+    	}
+    	public void decrementChild(){
+    		child = child - 1;
+    	}
+    	public void incrementAdult(){
+    		adult = adult + 1;
+    	}
+    	public void decrementAdult(){
+    		adult = adult - 1;
+    	}
+
+    	//devuelve la suma de ninos y adultos en una isla
+    	public int getPopulation(){
+    		return child + adult;
+    	}
+
     }
 
 }
